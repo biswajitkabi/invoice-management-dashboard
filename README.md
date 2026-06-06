@@ -10,36 +10,6 @@ A full-stack invoice management application built for Powerplay's SDE Internship
 
 ---
 
-## Project Structure
-invoice-dashboard/
-├── backend/                    # NestJS REST API
-│   ├── src/
-│   │   ├── invoices/           # Invoice module (CRUD, filters, pagination)
-│   │   │   ├── schemas/        # Mongoose schemas (Invoice, Customer)
-│   │   │   ├── dto/            # Validation DTOs
-│   │   │   ├── invoices.controller.ts
-│   │   │   ├── invoices.service.ts
-│   │   │   └── invoices.module.ts
-│   │   ├── customers/          # Customers module (summary, profile)
-│   │   │   ├── customers.controller.ts
-│   │   │   ├── customers.service.ts
-│   │   │   └── customers.module.ts
-│   │   ├── app.module.ts
-│   │   └── main.ts
-│   ├── scripts/
-│   │   └── seed.ts             # Data ingestion script
-│   └── seed-data.json          # 2000 invoice records
-├── frontend/                   # React application
-│   ├── src/
-│   │   ├── api/                # Axios API layer
-│   │   ├── components/         # Reusable UI components
-│   │   ├── pages/              # InvoicesPage, SummaryPage, CustomerProfilePage
-│   │   └── types/              # TypeScript interfaces
-├── docker-compose.yml
-└── README.md
-
----
-
 ## Setup & Installation
 
 ### Prerequisites
@@ -77,13 +47,13 @@ Make sure MongoDB is running, then:
 npm run seed
 ```
 
-Expected output:
-Connecting to MongoDB...
-Dropping existing collections...
-Reading seed data...
-Seeding 61 customers...
-Seeding 2000 invoices...
-Seed complete!
+- Expected output:
+- Connecting to MongoDB...
+- Dropping existing collections...
+- Reading seed data...
+- Seeding 61 customers...
+- Seeding 2000 invoices...
+- Seed complete!
 
 ### 4. Start the Backend
 
