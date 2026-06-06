@@ -86,7 +86,7 @@ async function seed() {
 
   await InvoiceModel.insertMany(invoices, { ordered: false });
 
-  console.log('✅ Seed complete!');
+  console.log('Seed complete!');
   await mongoose.disconnect();
 }
 
